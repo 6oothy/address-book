@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Address book</title>
+  </head>
+
+  <div id="wrapper">
+    <body>
+      <div class="title">
+        <h3>@Address book</h3>
+        <h5>Chris Booth</h5>
+      </div>
+
+      <!--Add Contact Button-->
+
+      <div>
+        <button
+          id="add-contact-button"
+          class="main-buttons add-contact"
+          type="button"
+        >
+          Add contact
+        </button>
+        <div id="add-contact-input" class="contact-input">
+          <input
+            id="add-firstName-input"
+            class="add-firstName"
+            type="text"
+            name="firstName"
+            placeholder="First name"
+          />
+          <input
+            id="add-lastName-input"
+            class="add-lastName"
+            type="text"
+            name="lastName"
+            placeholder="Surname"
+          />
+          <input
+            id="add-phone-input"
+            class="add-phone"
+            type="tel"
+            name="phone"
+            placeholder="Phone number"
+          />
+          <input
+            id="add-address-input"
+            class="add-address"
+            type="text"
+            name="address"
+            placeholder="Address"
+          />
+
+          <div>
+            <button
+              id="add-contact-submission"
+              class="submit-button action-buttons"
+            >
+              submit
+            </button>
+            <button
+              id="add-contact-cancel"
+              class="cancel-button action-buttons"
+            >
+              cancel
+            </button>
+          </div>
+          <div
+            id="add-contact-success-error-message"
+            class="success-error-messages"
+          ></div>
+        </div>
+
+        <!--Search Contacts Button-->
+
+        <button
+          id="search-contact-button"
+          class="main-buttons search-contact"
+          type="button"
+        >
+          Search contacts
+        </button>
+        <div id="search-contact-input" class="contact-input">
+          <input
+            id="search-box-input"
+            class="search-input"
+            type="text"
+            name="search"
+            placeholder="Enter a name, last name, phone number or address"
+          />
+          <div>
+            <button
+              id="search-contact-submission"
+              class="submit-button action-buttons"
+            >
+              search
+            </button>
+            <button
+              id="search-contact-viewall"
+              class="view-button action-buttons"
+            >
+              view all
+            </button>
+            <button
+              id="search-contact-cancel"
+              class="cancel-button action-buttons"
+            >
+              cancel
+            </button>
+          </div>
+          <div
+            id="search-contact-success-error-message"
+            class="success-error-messages"
+          ></div>
+          <div><table></table></div>
+        </div>
+
+        <!--Delete Contacts Button-->
+
+        <button
+          id="delete-contact-button"
+          class="main-buttons delete-contact"
+          type="button"
+        >
+          Delete contacts
+        </button>
+        <div id="delete-contact-input" class="contact-input">
+          <input
+            id="delete-contact-id"
+            class="delete-input"
+            type="text"
+            name="search"
+            placeholder="Enter the full name of the contact you wish to delete"
+          />
+          <div>
+            <button
+              id="delete-contact-submission"
+              class="submit-button action-buttons"
+            >
+              confirm
+            </button>
+            <button
+              id="delete-contact-cancel"
+              class="cancel-button action-buttons"
+            >
+              cancel
+            </button>
+          </div>
+          <div
+            id="delete-contact-success-error-message"
+            class="success-error-messages"
+          ></div>
+        </div>
+      </div>
+
+      <footer>Codeworks coding challenge 2019</footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="app.js"></script>
+    </body>
+  </div>
+</html>

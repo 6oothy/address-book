@@ -38,7 +38,7 @@ let Chris = new Contact(
   "Chris",
   "Booth",
   "123456789",
-  "Calle Carme 44, 2-1, Barcelona"
+  "Calle Vallencia 27, 3-1, Barcelona"
 );
 
 let Eve = new Contact(
